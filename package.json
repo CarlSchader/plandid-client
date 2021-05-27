@@ -33,10 +33,10 @@
     "rrule": "^2.6.6"
   },
   "scripts": {
-    "start": "cp ../reactConfig.js src/config.js && react-scripts start",
-    "build": "cp ../reactConfig.js src/config.js && react-scripts build",
-    "test": "cp ../reactConfig.js src/config.js && react-scripts test",
-    "eject": "cp ../reactConfig.js src/config.js && react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

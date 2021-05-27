@@ -1,0 +1,25 @@
+{
+    "url": "http://example.com",
+    "appName": "Plandid",
+    "loginPath": "/Login",
+
+    "colors": {
+        "primary": {
+            "light":"#f05545",
+            "main": "#b71c1c",
+            "dark": "#7f0000",
+            "contrastText": "#ffffff"
+        },
+        "secondary": {
+            "light": "#a4a4a4",
+            "main": "#757575",
+            "dark": "#494949",
+            "contrastText": "#000000"
+        }
+        },
+    
+    "stripe": {
+        "publicKey": "random string"
+    }
+}
+    
