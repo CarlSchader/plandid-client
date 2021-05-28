@@ -10,7 +10,7 @@ import luxonPlugin from '@fullcalendar/luxon';
 
 import {rruleString, rruleObject, localDate, executeQuery} from "../utilities";
 import {millisecondMap} from "../constants";
-import config from "../config";
+import config from '../config.json';
 import EventPopover from './EventPopover';
 
 const minSelectMinutes = 10;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { executeQuery, pathLowestLevel } from '../utilities';
-import config from "../config";
+import config from '../config.json';
 
 // material ui
 import {makeStyles, createMuiTheme, ThemeProvider} from '@material-ui/core/styles';

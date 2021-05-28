@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import {makeStyles} from "@material-ui/core/styles"
 import { loadStripe } from '@stripe/stripe-js';
 import {executeQuery} from "../utilities";
-import config from "../config";
+import config from '../config.json';
 
 import ClickableCard from "./ClickableCard";
 

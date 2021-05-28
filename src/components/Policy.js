@@ -1,6 +1,6 @@
 import React from "react";
 import {Route} from 'react-router-dom';
-import config from "../config";
+import config from '../config.json';
 
 import Pdf from "./Pdf";
 

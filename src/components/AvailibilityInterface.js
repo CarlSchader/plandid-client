@@ -8,7 +8,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import rrulePlugin from '@fullcalendar/rrule';
 import luxonPlugin from '@fullcalendar/luxon';
 
-import config from "../config";
+import config from '../config.json';
 import {rruleObject, rruleString, copyObject} from "../utilities";
 import {millisecondMap} from "../constants";
 import RRuleInterface from "./RRuleInterface";

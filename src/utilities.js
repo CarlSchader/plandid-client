@@ -1,6 +1,6 @@
 import axios from 'axios';
 import _ from "lodash"
-import config from './config';
+import config from './config.json';
 import { DateTime } from 'luxon';
 
 function eventFire(el, etype){

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import config from './config';
+import config from './config.json';
 
 import Basis from './components/Basis';
 // import './custom.scss';
