@@ -69,7 +69,7 @@ function Login({setLoggedIn=() => {}}) {
                 switch(res.data) {
                     case 0:
                         setLoggedIn(true);
-                        history.push("/Calendar")
+                        history.push("/Calendar");
                         break;
                     case 1:
                         window.alert('Email or password is incorrect.');

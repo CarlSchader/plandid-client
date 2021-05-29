@@ -175,8 +175,8 @@ function executeQuery(query=null, afterQuery=null) {
 }
 
 // onResponse takes a response argument.
-function sendRequest(path, data, onResponse=function(res) {if (res.data !== 0) window.alert(res.data)}) {
-    axios.post(path, data, {baseURL: config.url, withCredentials: false}).then(res => res.data === -1 ? window.location.reload() : onResponse(res));
+function sendRequest(path, data, onResponse=res => {}) {
+    axios.post(path, data, {baseURL: config.url, withCredentials: true}).then(res => onResponse(res));
 }
 
 function variantFromCategory(category, defaultVariant="") {

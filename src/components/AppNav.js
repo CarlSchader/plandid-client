@@ -68,6 +68,11 @@ export default function AppNav(props) {
         history.push(newValue);
     }
 
+    function validTabPath(pathname) {
+        const pathroot = pathLowestLevel(pathname);
+        return pathroot === "/Calendar" || pathroot === "/People";
+    }
+
     return (
         <div>
             <AppBar position="fixed" className={classes.root}>
@@ -84,7 +89,7 @@ export default function AppNav(props) {
                             />
                         </Typography>
                     </ThemeProvider>
-                    <Tabs value={pathLowestLevel(location.pathname)} onChange={handleTabChange} centered fullwidth="true" className={classes.tabs}>
+                    <Tabs value={validTabPath(location.pathname) ? pathLowestLevel(location.pathname) : "/Calendar"} onChange={handleTabChange} centered fullwidth="true" className={classes.tabs}>
                         <Tab value="/Calendar" label="Calendar" icon={<EventIcon />} />
                         <Tab value="/People" label="People" icon={<PeopleIcon />} />
                     </Tabs>
